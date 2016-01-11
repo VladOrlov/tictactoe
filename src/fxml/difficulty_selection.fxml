@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.conrollers.GameDifficultyController">
+   <children>
+      <Group />
+      <VBox layoutX="49.0" layoutY="34.0" prefHeight="121.0" prefWidth="106.0" spacing="10.0">
+         <children>
+            <RadioButton fx:id ="apprentice" layoutX="47.0" layoutY="46.0" mnemonicParsing="false" text="Apprentice">
+               <toggleGroup>
+                  <ToggleGroup fx:id="diffLevel" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id ="adept" layoutX="57.0" layoutY="91.0" mnemonicParsing="false" text="Adept" toggleGroup="$diffLevel" />
+            <RadioButton fx:id ="master" layoutX="67.0" layoutY="137.0" mnemonicParsing="false" text="Master" toggleGroup="$diffLevel" />
+            <RadioButton fx:id ="grandmaster" layoutX="77.0" layoutY="183.0" mnemonicParsing="false" text="Grand Master" toggleGroup="$diffLevel" />
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+      <HBox layoutY="197.0" prefHeight="25.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="ok" mnemonicParsing="false" onAction="#clickButtonHandler" prefWidth="60.0" text="OK">
+               <HBox.margin>
+                  <Insets left="40.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="cancel" mnemonicParsing="false" onAction="#clickButtonHandler" prefWidth="60.0" text="Cancel">
+               <HBox.margin>
+                  <Insets left="5.0" right="40.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</Pane>

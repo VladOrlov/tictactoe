@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="164.0" prefWidth="353.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.conrollers.RoundResultController">
+   <children>
+      <Button fx:id="newGame" layoutX="98.0" layoutY="130.0" mnemonicParsing="false" onAction="#clickButtonHandler" text="Once more" />
+      <Button fx:id="quit" layoutX="188.0" layoutY="130.0" mnemonicParsing="false" onAction="#clickButtonHandler" prefHeight="24.0" prefWidth="70.0" text="Quit" />
+      <TextArea fx:id="roundResult" editable="false" layoutX="6.0" layoutY="30.0" prefHeight="61.0" prefWidth="340.0" />
+   </children>
+</Pane>

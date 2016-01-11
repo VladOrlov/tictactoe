@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="177.0" prefWidth="355.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.conrollers.ModalWindowsController">
+   <children>
+      <Button layoutX="147.0" layoutY="138.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="62.0" text="ОК" onAction="#okButtonClickHandler"/>
+      <TextArea editable="false" layoutX="12.0" layoutY="11.0" prefHeight="120.0" prefWidth="331.0" text="Players alternate placing Xs and Os on the board until either (a) one player has three in a row, horizontally, vertically or diagonally; or (b) all nine squares are filled. &#10;If a player is able to draw three Xs or three Os in a row, that player wins.&#10;If all nine squares are filled and neither player has three in a row, the game is a draw." wrapText="true" />
+   </children>
+</Pane>

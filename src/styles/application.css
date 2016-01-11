@@ -1,0 +1,16 @@
+.button {
+    -fx-border-color: darkblue;
+    -fx-border-width: 3;
+    -fx-background-color:ghostwhite;
+}
+.button:hover {
+    -fx-border-color: #ffffff;
+    -fx-border-width: 3;
+    -fx-background-color: #ffffff;
+}
+.button:armed {
+    -fx-border-color: #ffffff;
+    -fx-border-width: 3;
+    -fx-background-color:#ffffff;
+
+}
