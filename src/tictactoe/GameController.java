@@ -82,13 +82,13 @@ public class GameController {
         if (menuID.equals("newGame")){
             newGame();
         }else if(menuID.equals("difLevel")){
-            GameDifficultyController.openInModalMode(getClass().getResource("../fxml/difficulty_selection.fxml"), computerPlayer.getGameDifficulty(), this);
+            GameDifficultyController.openInModalMode(getClass().getResource("/fxml/difficulty_selection.fxml"), computerPlayer.getGameDifficulty(), this);
         }else if(menuID.equals("gameMod")){
-            GameModeController.openInModalMode(getClass().getResource("../fxml/game_mode.fxml"), gameMode, this);
+            GameModeController.openInModalMode(getClass().getResource("/fxml/game_mode.fxml"), gameMode, this);
         }else if(menuID.equals("rules")){
-            ModalWindowsController.openInModalMode(getClass().getResource("../fxml/rules.fxml"), "Game rules");
+            ModalWindowsController.openInModalMode(getClass().getResource("/fxml/rules.fxml"), "Game rules");
         }else if(menuID.equals("about")){
-            ModalWindowsController.openInModalMode(getClass().getResource("../fxml/about.fxml"), "About");
+            ModalWindowsController.openInModalMode(getClass().getResource("/fxml/about.fxml"), "About");
         }else if(menuID.equals("quit")){
             System.exit(0);
         }
@@ -197,7 +197,7 @@ public class GameController {
 
     public void showRoundResult(String message){
 
-        RoundResultController.openInModalMode(getClass().getResource("../fxml/round_result.fxml"), gameBoard.getWinner(), this);
+        RoundResultController.openInModalMode(getClass().getResource("/fxml/round_result.fxml"), gameBoard.getWinner(), this);
     }
 
     public void changeGameDifficulty(ComputerPlayer.GameDifficulty gameDifficulty){
